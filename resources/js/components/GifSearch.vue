@@ -1,14 +1,14 @@
 <template>
-    <div>
+<div>
         <div class="">
             <img :src="this.gif" alt="" />
             <input type="hidden" name="gif" :value="this.gif" />
         </div>
-            <div class="gif-container">
-                <form @submit.prevent="doSearch">
-                    <input v-model="query" type="text" placeholder="GIF Search" class="form-control" />
-                    <button type="submit" class="btn btn-primary">Go</button>
-                </form>
+        <div class="gif-container">
+
+                <input v-model="query" type="text" placeholder="GIF Search" class="form-control" />
+
+                <button type="button" @click="doSearch" class=" btn btn-primary d-inline" >Go</button>
                 <ul class="list-group">
                     <li class="list-group-item" @click="selectOne(index)" v-for="(result, index) in results">
                         <img :src="result.images.fixed_height.url" />
@@ -16,8 +16,8 @@
                 </ul>
         </div>
     </div>
-
 </template>
+
 <script>
     import axios from 'axios'
     export default {

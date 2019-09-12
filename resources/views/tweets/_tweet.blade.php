@@ -12,8 +12,7 @@
                 </form>
              @endif
         <hr />
-            
-
+            <img src="/img/like.png" height="20px">
             <like-unlike is-liked="{{ $tweet->likedbyUser }}" :tweet-id="{{ $tweet->id }}" :count="{{ $tweet->likes()->count() }}"></like-unlike>
 
             <img src="/img/comment.png" height="20px">
@@ -30,18 +29,23 @@
             </ul>
         </div>
         <br />
+
+
         <form action="/comments/{{$tweet->id}}" method="POST">
-            @csrf
-            <div class="form-group">
-               <input type="text" name="body" class="form-control" />
-               <input type="hidden" name="tweet_id" value="{{ $tweet->id }}" />
-               <gif-search :value="this.gif"></gif-search>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <input type="text" name="body" class="form-control" />
+                    <input type="hidden" name="tweet_id" value="{{ $tweet->id }}" />
+                </div>
+
+
+                   @csrf
+                   <input type="submit" class="col-sm-2 btn btn-warning d-inline" value="Post" />
+                   <gif-search :value="this.gif"></gif-search>
+
+
             </div>
-
-           <div class="form-group">
-               <input type="submit" class="btn btn-warning d-inline" value="Post" />
-           </div>
-
         </form>
+
     </div>
 </div>

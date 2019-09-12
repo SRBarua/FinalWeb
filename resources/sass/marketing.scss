@@ -10,7 +10,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    color: #8FBC8F;
+    color: #008B8B;
 }
 
 .parallax{
@@ -62,7 +62,6 @@ body, html {
     padding-bottom: 0.1em;
     overflow: hidden;
 }
-
 .ml10 .letter {
     color: #8FBC8F;
     display: inline-block;
@@ -70,43 +69,51 @@ body, html {
     transform-origin: 0 0;
 }
 
-.ml14 {
+.ml12 {
   font-weight: 200;
-  font-size: 3.2em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
 }
-
-.ml14 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
-}
-
-.ml14 .line {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background-color: #8FBC8F;
-  transform-origin: 100% 100%;
-  bottom: 0;
-}
-
-.ml14 .letter {
+.ml12 .letter {
   display: inline-block;
   line-height: 1em;
 }
-
 .thumbnail {
     width: 100%;
     height: 100%;
 }
-
+#subtitle  {
+    background-color: orange;
+}
+#reveal1 {
+		opacity: 0;
+		-webkit-transform: scale(0.9);
+			 -moz-transform: scale(0.9);
+				-ms-transform: scale(0.9);
+				 -o-transform: scale(0.9);
+						transform: scale(0.9);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+	}
+	#reveal1.visible {
+		opacity: 1;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	}
 .jumbotron {
+    background-color: transparent;
+    background-position:center center;
+    background-repeat: no-repeat;
     align-content: center;
     border-radius: 0px;
+    padding: 2rem 1rem;
     color: black;
     font-family: "Montserrat", sans-serif;
     justify-content: center;
@@ -162,22 +169,20 @@ body, html {
 .display-4 {
     height: 50%;
     padding: 20px;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
     letter-spacing: 3px;
 }
 .subtitle{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
     text-align: center;
 }
-
 .lead {
     font-size: 18px;
     font-weight: normal;
     text-align: center;
 }
-
 .caption2 {
     align-items: center;
     display: flex;
@@ -195,14 +200,15 @@ body, html {
     font-size: 25px;
     letter-spacing: 5px;
 }
+
 .ml1 {
   font-weight: 900;
-  font-size: 2.5em;
+  font-size: 2.3em;
 }
 
 .ml1 .letter {
   display: inline-block;
-  line-height: 1em;
+  line-height: 0.9em;
 }
 
 .ml1 .text-wrapper {
@@ -225,3 +231,11 @@ body, html {
 
 .ml1 .line1 { top: 0; }
 .ml1 .line2 { bottom: 0; }
+
+#footer {
+    background-color: orange;
+}
+#footer .container .row {
+    font-size: .8em;
+    font-weight: 400;
+}

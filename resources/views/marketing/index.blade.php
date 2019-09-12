@@ -26,29 +26,21 @@
                     <span class="letters">Tweeter</span>
                 </span>
             </h1>
-            <h2 class="ml14">
-                <span class="text-wrapper">
-                    <span class="letters">Engage with the world</span>
-                    <span class="line"></span>
-                </span>
-            </h2>
+
         </div>
     </div>
 
-
-    <section class="parallax" data-parallex="scroll" data-z-index="1">
-        <div class="jumbotron" >
-            <div class="container">
-                <hr class="my-4">
-                <h4 class="subtitle">Think,  Explore,  Meet</h4>
-                <p class="lead">
-                    |<span> Discover a new difference </span>|
-                    |<span> Decide where you belong</span>|
-                    |<span>Stay real and grow as social</span>|
-                </p>
-                <hr class="my-4">
+    <section id="subtitle">
+        <div class="spacer s2"></div>
+        <div id="trigger1" class="spacer s0"></div>
+        <div id="reveal1" class="box2 blue">
+            <div class="jumbotron" >
+                <div class="container">
+                    <h3 class="ml12">Stay Real</h3>
+                </div>
             </div>
         </div>
+        <div class="spacer s2"></div>
     </section>
 
     <div id="background_container">
@@ -56,41 +48,41 @@
             <img class="thumbnail" src="/img/marketing11.png" alt="marketing11.png">
         </div>
         <div class="caption">
-            <h1 class="ml1">
-                <span class="text-wrapper">
-                    <span class="line line1"></span>
-                    <span class="letters">Social Engagement</span>
-                    <span class="line line2"></span>
-                </span>
-            </h1>
+                <h2 class="ml1">
+                    <span class="text-wrapper">
+                        <span class="line line1"></span>
+                        <span class="letters">Social Engagement</span>
+                        <span class="line line2"></span>
+                    </span>
+                </h2>
         </div>
     </div>
 
     <section class="parallax" data-parallex="scroll" data-z-index="1">
-        <div class="jumbotron">
-            <div class="container">
-                <hr class="my-4">
-                <h4 class="subtitle">Spark,  Initiate,  Arise</h4>
-                <p class="lead">
-                    <span>Open the door for social living</span>  | <span>Feel the social experience</span> | <span>See your worth to the world</span>
-                </p>
-                <hr class="my-4">
+            <div class="jumbotron" >
+                    <div class="container">
+                        <hr class="my-4">
+                        <h4 class="display-4">Think,  Explore,  Meet</h4>
+                        <hr class="my-4">
+                        <p class="lead">
+                            A platform to be connected to audiences across the world.
+                        </p>
+                    </div>
             </div>
-        </div>
     </section>
 
     <div id="background_container">
         <div id="bgimg-2">
-            <img class="thumbnail" src="/img/marketing2.jpg" alt="marketing2.jpg" >
+            <img class="thumbnail" src="/img/engage.jpg" alt="engage.jpg" >
         </div>
         <div class="caption">
-            <h1 class="ml1">
+            <h2 class="ml1">
                 <span class="text-wrapper">
                     <span class="line line1"></span>
-                    <span class="letters">Endless Possibilities Unfold</span>
+                    <span class="letters">Endless Possibilities</span>
                     <span class="line line2"></span>
                 </span>
-            </h1>
+            </h2>
         </div>
     </div>
 
@@ -98,12 +90,14 @@
         <div class="jumbotron">
             <div class="container">
                 <hr class="my-4">
-                <h4 class="subtitle">Engage,  Refresh,  Redefine</h4>
-                <p class="lead">
-                    Remain social, engage more and increase your social worth.
-                    Choose your unique space, define yourself and make your next big.
-                </p>
+                <h4 class="display-4">Spark,  Initiate,  Arise </h4>
                 <hr class="my-4">
+                <p class="lead">
+                    A platform designed to share thoughts and ideas in real-time.
+                    <br />
+                    A digital platform helping you take your business venture to epic heights.
+                </p>
+
             </div>
         </div>
     </section>
@@ -113,13 +107,42 @@
             <img class="thumbnail" src="/img/bg-img7 (15).jpeg" alt="bg-img7 (15).jpeg">
         </div>
         <div class="caption">
-            <h1 class="ml1">
+            <h2 class="ml1">
                 <span class="text-wrapper">
                     <span class="line line1"></span>
                     <span class="letters">Framing Social Space</span>
                     <span class="line line2"></span>
                 </span>
-            </h1>
+            </h2>
+        </div>
+    </div>
+
+    <section class="parallax" data-parallex="scroll" data-z-index="1">
+        <div class="jumbotron">
+                <div class="container">
+                    <hr class="my-4">
+                    <h4 class="display-4"> Engage,  Refresh,  Redefine </h4>
+                    <hr class="my-4">
+                    <p class="lead">
+                        A platform where engaging more with audiences refreshes result and increases social worth.
+                    </p>
+
+                </div>
+        </div>
+    </section>
+
+    <div id="background_container">
+        <div id="bgimg-2">
+            <img class="thumbnail" src="/img/bg-imgsocialadventure.jpg" alt="bg-imgsocialadventure.jpg" >
+        </div>
+        <div class="caption">
+            <h2 class="ml1">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">Let's Make FRIENDS!</span>
+                    <span class="line line2"></span>
+                </span>
+            </h2>
         </div>
     </div>
 
@@ -128,8 +151,6 @@
             <div class="container">
                 <h3 class="display-4">Join TWEETER Today</h3>
                 <hr class="my-4">
-                <p class="lead">
-                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. </p>
                     <a class="btn btn-primary btn-sm mr-1" href="{{ route('login') }}" role="button">LOGIN</a>
                     <a class="btn btn-primary btn-sm" href="{{ route('register') }}" role="button">Register</a>
                 </p>
@@ -137,64 +158,38 @@
         </div>
     </section>
 
-    <div id="background_container">
-        <div id="bgimg-2">
-            <img class="thumbnail" src="/img/friendship12.jpg" alt="friendship12.jpg" >
-        </div>
-        <div class="caption">
-            <h1 class="ml1">
-                <span class="text-wrapper">
-                    <span class="line line1"></span>
-                    <span class="letters">Let's Make FRIENDS!</span>
-                    <span class="line line2"></span>
-                </span>
-            </h1>
-        </div>
-    </div>
-
-    <section class="parallax" data-parallex="scroll" data-z-index="1">
-        <div class="jumbotron">
-
-            <div class="container">
-                <p class="lead">
-                    Le Lorem Ipsum est simplement du faux texte employé dans
-                    la composition et la mise en page avant impression. Le
-                    Lorem Ipsum est le faux texte standard de l'imprimerie
-                    depuis les années 1500, quand un imprimeur anonyme
-                    assembla ensemble des morceaux de texte pour réaliser un
-                    livre spécimen de polices de texte. Il n'a pas fait que
-                    survivre cinq siècles, mais s'est aussi adapté à la
-                    bureautique informatique, sans que son contenu n'en soit modifié.
-                </p>
-                <hr class="my-4">
-                <p> <span>2019-Copyright Tweeter </span> | <span> Tweeter CANADA </span> | <span> tweeter@gmail.com </span> </p>
+    <div id="footer" class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"> About us </div>
+                <div class="col-sm-3"> Directory </div>
+                <div class="col-sm-3"> Privacy </div>
+                <div class="col-sm-3"> Terms </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"> API </div>
+                <div class="col-sm-3"> Support </div>
+                <div class="col-sm-3"> Jobs </div>
+                <div class="col-sm-3"> Language </div>
             </div>
         </div>
-    </section>
+        <hr class="my-4">
+        <p> <span>2019-Copyright Tweeter </span> | <span> Tweeter CANADA </span> | <span> tweeter@gmail.com </span> </p>
+    </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js" integrity="sha256-FFLLrHXIDQMMo5LvHJpccfzBaMz8CLIL6Wg9UjN37lw=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" integrity="sha256-v00gso3ox/d0KLJDJew6+zm29+J39rYWZvOgoXzDtCs=" crossorigin="anonymous"></script>
 
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+
     <script>
         var textWrapper = document.querySelector('.ml10 .letters');
         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -214,33 +209,37 @@
             delay: 1000
           });
 
-          var textWrapper = document.querySelector('.ml14 .letters');
+          var controller = new ScrollMagic.Controller();
+          new ScrollMagic.Scene({
+              triggerElement: "#trigger1",
+                          triggerHook: 0.9, // show, when scrolled 10% into view
+                          duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+                          offset: 50 // m
+						})
+						.setClassToggle("#reveal1", "visible") // add class to reveal
+						.addTo(controller);
+
+          var textWrapper = document.querySelector('.ml12');
           textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
           anime.timeline({loop: true})
           .add({
-              targets: '.ml14 .line',
-              scaleX: [0,1],
-              opacity: [0.5,1],
-              easing: "easeInOutExpo",
-              duration: 900
-          }).add({
-              targets: '.ml14 .letter',
-              opacity: [0,1],
+              targets: '.ml12 .letter',
               translateX: [40,0],
               translateZ: 0,
-              scaleX: [0.3, 1],
+              opacity: [0,1],
               easing: "easeOutExpo",
-              duration: 800,
-              offset: '-=600',
-              delay: (el, i) => 150 + 25 * i
+              duration: 1200,
+              delay: (el, i) => 500 + 30 * i
           }).add({
-              targets: '.ml14',
-              opacity: 0,
-              duration: 1000,
-              easing: "easeOutExpo",
-              delay: 1000
+              targets: '.ml12 .letter',
+              translateX: [0,-30],
+              opacity: [1,0],
+              easing: "easeInExpo",
+              duration: 1100,
+              delay: (el, i) => 100 + 30 * i
           });
+
         var image = document.getElementsByClassName('thumbnail');
         new simpleParallax(image, {
         	delay: .9,

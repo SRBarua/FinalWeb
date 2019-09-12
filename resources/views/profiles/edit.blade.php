@@ -5,12 +5,26 @@
             <form action="/profiles/{{ $profile->id }}" method="POST">
                 {{ method_field('PUT') }}
                 @csrf
-                <h4> Bio</h4>
-                <p><textarea name="bio" placeholder="About yourself">{{ $profile->bio }}</textarea></p>
-                <h4> Date of Birth</h4>
-                <p><textarea name="birthday" placeholder="yyyy-mm-dd">{{ $profile->birthday }}</textarea></p>
-                <h4>Location</h4>
-                <p><textarea name="location" placeholder="City, State/Province">{{ $profile->location }}</textarea></p>
+                <form>
+                  <div class="form-group row">
+                      <label for="bio" class="col-md-2 col-form-label"> Bio </label>
+                      <div class="col-md-10">
+                          <textarea name="bio" placeholder="About yourself">{{ $profile->bio }}</textarea>
+                      </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="bio" class="col-md-2 col-form-label">Date of Birth </label>
+                     <div class="col-md-10">
+                         <textarea name="birthday" placeholder="yyyy-mm-dd">{{ $profile->birthday }}</textarea>
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="ilocation" class="col-md-2 col-form-label"> Location </label>
+                     <div class="col-md-10">
+                         <textarea name="location" placeholder="City, State/Province">{{ $profile->location }}</textarea>
+                     </div>
+                 </div>
+
                 <br />
                 <button type="submit">Save</button>
             </form>

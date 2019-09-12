@@ -1,15 +1,15 @@
 <template>
 
         <a href="#" @click="doLike">
-            <i class="fa fa-thumbs-up"> </i> {{ dataIsLiked ? 'Unlike' : 'Like' }} ( {{ dataCount }} )
+            <i class="fa fa-thumbs-up"></i> {{ dataIsLiked ? 'Unlike' : 'Like' }} ( {{ dataCount }} )
         </a>
 
 </template>
 
 <script>
-    
+
     export default {
-        props: ['tweetId', 'isLiked', 'count'],
+        props: ['count', 'tweetId', 'isLiked' ],
 
         data(){
             return {

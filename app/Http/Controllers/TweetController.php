@@ -18,7 +18,7 @@ class TweetController extends Controller
      */
     public function index()
     {
-        $tweets = \App\Tweet::orderby('created_at', 'desc')->paginate(5);
+        $tweets = \App\Tweet::orderby('created_at', 'desc')->paginate(10);
         return view('tweets/index', compact('tweets'));
     }
 

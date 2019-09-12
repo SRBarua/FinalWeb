@@ -30,7 +30,7 @@ Route::resource('/profiles', 'ProfileController');
 
 
 Route::post('/follow/{user}', 'FollowUserController@store');
-Route::post('/follow/{user}', 'FollowUserController@store');
+Route::post('/following/{user}', 'FollowUserController@store');
 
     //Route::get('/posts/{post/unlike}', 'PostController@unlike');
     //Route::get('/tweets/{tweet}/islikedbyme', 'TweetController@isLikedByMe');

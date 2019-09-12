@@ -43,12 +43,13 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
+
         $data = $request->all();
         $data = $request->validate([
             'body' => 'required|max:200'
 
         ]);
-        
+
         $comment = new \App\Comment;
 
         //set some properties from $request data

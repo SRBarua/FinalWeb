@@ -1952,7 +1952,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['tweetId', 'isLiked', 'count'],
+  props: ['count', 'tweetId', 'isLiked'],
   data: function data() {
     return {
       dataIsLiked: false,
@@ -37325,45 +37325,36 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "gif-container" }, [
-      _c(
-        "form",
-        {
-          on: {
-            submit: function($event) {
-              $event.preventDefault()
-              return _vm.doSearch($event)
-            }
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.query,
+            expression: "query"
           }
-        },
-        [
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.query,
-                expression: "query"
-              }
-            ],
-            staticClass: "form-control",
-            attrs: { type: "text", placeholder: "GIF Search" },
-            domProps: { value: _vm.query },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.query = $event.target.value
-              }
+        ],
+        staticClass: "form-control",
+        attrs: { type: "text", placeholder: "GIF Search" },
+        domProps: { value: _vm.query },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
             }
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-            [_vm._v("Go")]
-          )
-        ]
+            _vm.query = $event.target.value
+          }
+        }
+      }),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: " btn btn-primary d-inline",
+          attrs: { type: "button" },
+          on: { click: _vm.doSearch }
+        },
+        [_vm._v("Go")]
       ),
       _vm._v(" "),
       _c(

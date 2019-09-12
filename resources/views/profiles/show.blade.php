@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-
+    
     <div class="card" align="center">
             @include('profiles._profile')
             <div>Birthday: {{ $profile->birthday }}</div>
