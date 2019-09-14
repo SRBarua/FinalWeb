@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use App\Tweet;
 use App\Comment;
+use App\User;
+
+use App\Mail\NewComment;
 
 class CommentController extends Controller
 {
