@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Auth;
 
-class Tweet extends Model
+class tweet extends Model
 {
     // Carbon instance fields
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];
