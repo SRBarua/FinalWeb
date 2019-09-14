@@ -49890,9 +49890,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Projects\FinalWeb\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\Projects\FinalWeb\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\Projects\FinalWeb\resources\sass\marketing.scss */"./resources/sass/marketing.scss");
+__webpack_require__(/*! C:\Projects\Finalweb\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Projects\Finalweb\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\Projects\Finalweb\resources\sass\marketing.scss */"./resources/sass/marketing.scss");
 
 
 /***/ })
